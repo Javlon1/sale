@@ -1,0 +1,152 @@
+@import '../../../Assets/Sass/Veriables.scss';
+
+.intro {
+    margin-top: 100px;
+    background-color: $intro-bc;
+
+    .container {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        background-image: url('../../../Assets/Img/intro.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+
+        &__title {
+            font-size: 70px;
+            font-weight: 600;
+            line-height: 90px;
+            color: $name;
+            text-transform: uppercase;
+        }
+
+        &__subtitle {
+            width: 70%;
+            color: #0d1218;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0;
+                margin-right: 1rem;
+                background-color: #86A4EC;
+                border-radius: .4rem;
+                padding: .3rem;
+                width: 150px;
+                font-weight: 600;
+                font-size: 1.3rem;
+                text-align: center;
+                color: $black;
+            }
+
+            &__item {
+                height: 36px;
+                width: 36px;
+                background-color: #979797;
+                display: inline-block;
+                text-align: center;
+                line-height: 36px;
+                border-radius: 2px;
+                margin-right: 10px;
+                transition: .25s;
+                color: #000;
+
+                &:hover {
+                    transition: $transition;
+                    background-color: $black;
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .intro {
+        .container {
+            &__title {
+                font-size: 65px;
+                font-weight: 600;
+            }
+    
+            &__subtitle {
+                width: 65%;
+                font-size: 25px;
+            }
+    
+            &__list {
+                p {
+                    width: 120px;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .intro {
+        .container {
+            &__title {
+                font-size: 60px;
+            }
+    
+            &__subtitle {
+                width: 75%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 410px) {
+    .intro {
+        .container {
+            &__title {
+                font-size: 55px;
+                font-weight: 500;
+            }
+    
+            &__subtitle {
+                width: 90%;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 343px) {
+    .intro {
+        .container {
+            &__title {
+                font-size: 50px;
+                font-weight: 500;
+            }
+    
+            &__subtitle {
+                width: 90%;
+                font-size: 20px;
+            }
+    
+            &__list {
+                p {
+                    width: 100px;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    padding: .4rem;
+                }
+            }
+        }
+    }
+}
