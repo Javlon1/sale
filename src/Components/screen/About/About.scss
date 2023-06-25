@@ -88,18 +88,27 @@
 
 @media only screen and (max-width: 991px) {
     .about {
-        padding: 50px 0px 105px;   
+        padding: 100px 0px 105px;   
         .container {
             display: block;
             text-align: center;
     
             &__left {
-                margin-top: 10rem;
+                margin-top: 0rem;
                 width: 100%;
             }
     
             &__right {
                 width: 100%;
+
+                &__title {
+                    &:before {
+                        left: 0;
+                        right: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
                 &__list {
                     margin-top: 3rem;
                     margin-left: 3rem;
