@@ -13,9 +13,13 @@ export default function Intro() {
                         <p>установить</p>
                         <a href="/" className='container__list__item'><i className="bi bi-android2"></i></a>
                         <a href="/" className='container__list__item'><i className="bi bi-apple"></i></a>
-                    </ul></div>
-
+                    </ul>
+                </div>
             </div>
         </section>
+
+
+
+
     )
 }

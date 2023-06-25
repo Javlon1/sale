@@ -38,7 +38,7 @@ export default function Header() {
           <ul className={nav ? 'container__nav__list active-nav' : 'container__nav__list'}>
             {
               HeaderData?.map((e) => (
-                <Link key={e.id} to={e.link}>
+                <a key={e.id} href={e.link}>
                   <li className={`${menu === e.id ? 'container__nav__list__item active' : 'container__nav__list__item'}`}
                     onClick={() => {
                       setMenu(e.id)
@@ -46,7 +46,7 @@ export default function Header() {
                     }}>
                     {e[`nav_${lan}`]}
                   </li>
-                </Link>
+                </a>
               ))
             }
             <Language />
