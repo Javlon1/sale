@@ -1,8 +1,8 @@
 @import '../../../Assets/Sass/Veriables.scss';
 
 .intro {
-    margin-top: 100px;
     background-color: $intro-bc;
+    padding: 140px 0px 175px;   
 
     .container {
         height: 80vh;
@@ -72,6 +72,7 @@
 
 @media only screen and (max-width: 991px) {
     .intro {
+        padding: 140px 0px 105px;   
         .container {
             &__title {
                 font-size: 65px;
