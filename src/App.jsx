@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.scss';
 import Header from './Components/layout/Header/Header';
 import About from './Components/screen/About/About';
+import Contact from './Components/screen/Contact/Contact';
 import Intro from './Components/screen/Intro/Intro';
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Header />
       <Intro />
       <About />
+      <Contact />
 
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>

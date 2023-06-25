@@ -1,7 +1,7 @@
 @import '../../../Assets/Sass/Veriables.scss';
 
 .about {
-    height: 100vh;
+    padding: 140px 0px 175px;
     display: flex;
     align-items: center;
 
@@ -21,9 +21,23 @@
                 font-size: 42px;
                 font-weight: 600;
                 line-height: 5rem;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 130px;
+                    height: 4px;
+                    left: 0;
+                    right: 0;
+                    bottom: -.5rem;
+                    opacity: 1;
+                    background-color: $black;
+                }
             }
 
             &__text {
+                margin-top: 1rem;
                 font-size: 1.3rem;
                 font-weight: 500;
                 line-height: 2rem;
